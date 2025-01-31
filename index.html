@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('sexy.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: rgba(14, 9, 9, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .profile h2 {
+            color: white;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        .links .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            margin: 10px auto;
+            padding: 12px;
+            width: 100%;
+            max-width: 260px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        .links .btn i {
+            margin-right: 12px;
+        }
+        .links .btn:hover {
+            background: #ffcccb;
+            transform: scale(1.05);
+        }
+        .social a {
+            color: white;
+            font-size: 26px;
+            margin: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social a:hover {
+            color: #ec6c6a;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".btn");
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    alert("Você clicou em " + button.textContent.trim());
+                });
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="1.jpg" alt="Foto do Perfil">
+            <h2>PAM FRANÇA</h2>
+        </div>
+        <div class="links">
+            <a href="https://m.youtube.com/watch?v=hxc60XKFFW0&fbclid=PAY2xjawIJ-SJleHRuA2FlbQIxMAABps7zfKXy_diEgeeYvbwSzC6TmL92pDlUx6hyMjgeLGC9oLMzVKg0rQYMRA_aem_PgEITSQ--N2IKNf2dQse6w " class="btn"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="#" class="btn"><i class="fab fa-spotify"></i> Spotify</a>
+            <a href="#" class="btn"><i class="fab fa-twitter"></i> X/Twiter</a>
+            <a href="https://privacy.com.br/@PamOfficial" class="btn"><i class="fas fa-music"></i> @Privacy</a>
+            <a href="https://www.instagram.com/pamofficial_?igsh=MW9yYTRzNmVhaTRybg==" class="btn"><i class="fas fa-link"></i> Instagram</a>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
